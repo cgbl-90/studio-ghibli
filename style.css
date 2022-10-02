@@ -5,10 +5,19 @@
 
 body {
     font-family: 'Inconsolata', monospace;
-    padding: 0;
-    margin: 0;
     background-color: var(--main--color);
     width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -27,16 +36,18 @@ li:first-child {
 
 li {
     line-height: 40px;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
 
 h4 {
     font-family: 'Smooch Sans', sans-serif;
 }
 
-li:hover,
-li:focus {
-    padding-bottom: 5px;
-    border-bottom: 4px solid white;
+.links li:hover,
+.links li:focus {
+    padding-left: 5px;
+    border-left: 4px solid white;
     width: fit-content;
 }
 
@@ -81,21 +92,21 @@ div p {
     flex-direction: row;
     justify-content: space-around;
     place-items: center;
+}
 
+.header {
+    height: 100px;
 }
 
 header img {
     display: block;
     margin: 0 auto;
-    top: 0;
-    left: 0;
 }
 
 footer,
 .featured {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
 }
 
 .featured {
@@ -119,10 +130,12 @@ footer div {
 .content-box {
     max-width: 900px;
     margin: 100px auto;
+    flex-wrap: wrap;
 }
 
 .content-box p {
     margin: 20px;
+    width: 45ch;
 }
 
 .content-box img {
@@ -131,10 +144,27 @@ footer div {
     z-index: 2;
 }
 
+.hero-box {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-box img,
+span img {
+    max-width: 350px;
+    padding: 0;
+    margin: 0;
+    align-items: left;
+    border-radius: 4px;
+}
+
 section h1 {
     display: block;
     margin: 200px auto 50px;
     text-align: center;
+    font-size: 4rem;
 }
 
 .films {
@@ -143,7 +173,31 @@ section h1 {
 }
 
 .films img {
-    max-width: 300px;
+    max-width: 400px;
     margin: 10px;
     border-radius: 4px;
+}
+
+.textbox h2 {
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 3rem;
+}
+
+.textbox h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+
+mark {
+    background-color: var(--secondary--color);
+    color: white;
+}
+
+.textbox {
+    text-align: right;
+    padding-right: 50px;
+}
+
+span {
+    display: inline;
 }
