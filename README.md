@@ -1,5 +1,5 @@
 # studio-ghibli
 
 Inspired by: https://ghibli-app-front.vercel.app/
- 
-<img src="src/princess-mononoke.jpeg" alt="Princess Mononoke">
+
+![image](https://user-images.githubusercontent.com/58992828/193478304-3dcb2716-0eda-478d-9a46-774f9c3fd2c9.png)
