@@ -136,3 +136,14 @@ section h1 {
     margin: 200px auto 50px;
     text-align: center;
 }
+
+.films {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.films img {
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 4px;
+}
